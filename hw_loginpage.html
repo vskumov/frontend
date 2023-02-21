@@ -30,7 +30,13 @@
         .right {
         position: absolute;
         left: 50%;
-        padding: 0 0 0 32px;
+        padding: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 90%;
+        min-width: 50%
+
         
         }
 
@@ -79,7 +85,8 @@
         }
 
         input::placeholder {
-            color: lightgray;
+            color: grey;
+            font-weight: 200;
         }
 
         input:focus {
@@ -113,25 +120,27 @@
     <div class="left"></div>
 
     <div class="right">
-      <h1>Login</h1>
 
-      <h2>Please enter your credentials</h2>
+        <div>
+            <h1>Welcome</h1>
 
-      <form class="inline">
-        <div class="input-icons">
-            <p>
-                <i class="fa fa-user-circle-o icon"></i>
-                <input type="text" placeholder="Your login" />
-            </p>
+            <h2>Please login to continue</h2>
 
-                <i class="fa fa-unlock-alt icon"></i>
-                <input type="password" placeholder="Your password" />
-            <p>
-                <button>Login</button>
-            </p>
+            <form class="inline">
+                <div class="input-icons">
+                    <p>
+                        <i class="fa fa-user-circle-o icon"></i>
+                        <input type="text" placeholder="Your login" />
+                    </p>
+
+                        <i class="fa fa-unlock-alt icon"></i>
+                        <input type="password" placeholder="Your password" />
+                    <p>
+                        <button>Login</button>
+                    </p>
+                </div>
+            </form>
         </div>
-
-      </form>
       </div>
     </div>
   </body>
