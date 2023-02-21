@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html,
+    body,
+    .container {
+        height: 100%;
+        font-size: 14px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: small;
+        font-weight: 400;
+        height: min-content;
+        padding: 3%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        vertical-align: top;
+        align-items: stretch;
+        /* box-sizing: border-box; */
+        margin-top: 3rem;
+        max-width: 800px;
+        width: 100%;
+    }
+    .item {
+        width: 27%;
+        margin-bottom: 1rem;
+        min-height: 560px;
+        max-height: min-content;
+        /* background: lightsalmon; */
+    }
+    .item_down {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    img.post {
+        width: 100%;
+        aspect-ratio: 0.6;
+        object-fit: cover;
+    }
+    h1,
+    h2.post {
+        font-family: 'Prata', serif;        
+        margin: 1rem 0 0.5rem 0;
+    }
+    h1 {
+        font-size: 64px;
+        font-weight: 200;
+        text-shadow: 1px 1px 4px lightgray;   
+        text-align: center;
+        
+        position: absolute; /* Фиксированное положение */
+        top: 0.5rem; /* Расстояние сверху */
+        
+    }
+    p.post {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    p.read-more {
+        line-height: normal;
+        margin: 0.5rem 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: small;
+        font-weight: 400;
+    }
+    a {
+            color: black;
+            text-decoration: none;
+            border-bottom: 1px solid lightgray;
+            padding: 1px;
+        }
+    a:hover {
+            text-decoration: none;
+            color: lightsalmon;
+            border-bottom: 1px solid lightsalmon;
+            padding: 1px;
+    }
+</style>
+</head>
+<body>
+
+<h1>TRAVEL <br> EXPERIENCE</h1>
+<div class="container">
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1551891590-eeac39130199?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="" class="post">
+        <h2 class="post">01/</h2>
+        <p class="post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic non modi facere exercitationem officiis! Accusamus asperiores cumque perferendis ea sint.</p>
+        <p class="read-more"><a href="">Read more →</a></p>
+
+    </div>
+
+    <div class="item item_down">
+        <img src="https://images.unsplash.com/photo-1616005888545-43de8d5b5997?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="" class="post">
+        <h2 class="post">02/</h2>
+        <p class="post">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nisi!</p>
+        <p class="read-more"><a href="">Read more →</a></p>
+
+    </div>
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1499062918700-389fa905494e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="" class="post">
+        <h2 class="post">03/</h2>
+        <p class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde similique vitae! Fuga quisquam eveniet laudantium error recusandae vero dignissimos?</p>
+        <p class="read-more"><a href="">Read more →</a></p>
+    </div>
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1513517860393-d9bf0651bed8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="" class="post">
+        <h2 class="post">04/</h2>
+        <p class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maxime dignissimos odit dicta!</p>
+        <p class="read-more"><a href="">Read more →</a></p>
+    </div>
+
+    <div class="item item_down">
+        <img src="https://images.unsplash.com/photo-1573757580620-e71069e58626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1885&q=80" alt="" class="post">
+        <h2 class="post">05/</h2>
+        <p class="post">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dolorum sed, accusamus quis praesentium accusantium ducimus error repudiandae corporis quas.</p>
+        <p class="read-more"><a href="">Read more →</a></p>
+    </div>
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1501761095094-94d36f57edbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80" alt="" class="post">
+        <h2 class="post">06/</h2>
+        <p class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate praesentium expedita, earum esse cum voluptas reiciendis eveniet sint deserunt.</p>
+        <p class="read-more"><a href="">Read more→</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>
