@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <title>Awesome Layouts</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        padding: 48px 24px;
+        display: flex;
+        justify-content: space-around;
+
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.7;
+        font-size: small;
+      }
+
+      p {
+        margin-bottom: 1.5em;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        max-width: 900px;
+      }
+
+      .content_blocks {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 18px;
+        overflow: hidden;
+        padding: 6px;
+      }
+
+      .one_column_content {
+        background-color: whitesmoke;
+
+        border-radius: 12px;
+        padding: 24px;
+
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+
+      .two_columns_content {
+        width: calc(100% / 2);
+        background-color: whitesmoke;
+        box-sizing: border-box;
+
+        overflow: hidden;
+        position: relative;
+
+        border-radius: 12px;
+        padding: 24px;
+
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+
+      .two_columns_content:hover {
+        background-color: rgba(245, 222, 179, 0.274);
+      }
+
+      .three_columns_content {
+        width: calc(100% / 3);
+        margin-bottom: 48px;
+      }
+
+      .icon {
+        min-width: fit-content;
+        max-width: min-content;
+        display: flex;
+        justify-content: space-around;
+        background-color: whitesmoke;
+        border-radius: 12px;
+        padding: 8px;
+        font-size: large;
+        margin-bottom: 12px;
+        aspect-ratio: 1 / 1;
+      }
+
+      .img_fit {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .img_fit img {
+        max-width: 80%;
+        height: auto;
+      }
+
+      .img-flow {
+        position: absolute;
+        align-self: flex-end;
+        width: 100%;
+      }
+
+      .img-flow img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content_blocks">
+        <div class="three_columns_content">
+          <figure class="icon"><i class="las la-cube"></i></figure>
+          <h3>All across the nation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+            maxime ullam minima iste. Minima, nobis!
+          </p>
+        </div>
+
+        <div class="three_columns_content">
+          <figure class="icon"><i class="las la-layer-group"></i></figure>
+          <h3>Such a strange vibration</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+            nostrum aliquid consequuntur illo molestiae?
+          </p>
+        </div>
+
+        <div class="three_columns_content">
+          <figure class="icon"><i class="las la-cloud-sun"></i></figure>
+          <h3>People in motion</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            corporis asperiores fuga, molestias qui magni?
+          </p>
+        </div>
+      </div>
+
+      <div class="content_blocks">
+        <div class="two_columns_content">
+          <h2>There's a whole generation</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+            inventore assumenda aliquam, error itaque commodi fugiat veniam
+            sunt!
+          </p>
+
+          <figure class="img_fit"><img src="/flower.png" /></figure>
+        </div>
+
+        <div class="two_columns_content">
+          <h2>With a new explanation</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            reprehenderit, provident asperiores architecto nemo optio quia
+            repellat nesciunt exercitationem amet?
+          </p>
+
+          <figure class="img-flow">
+            <img src="/transparent-flower_cut.png" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="content_blocks">
+        <div class="one_column_content">
+          <h2>Be sure to wear some flowers in your hair</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+            magnam minus accusamus pariatur ullam, voluptatem optio aspernatur
+            dolor consectetur sint quam quaerat odio vero incidunt nulla, vitae,
+            reprehenderit quo! Nobis pariatur molestias neque ut minus
+            accusantium obcaecati consectetur dolores, praesentium dignissimos
+            vel ea.
+          </p>
+          <p>
+            <i class="las la-smile-wink"></i> Inspiration: Scott McKenzie — San
+            Francisco
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
