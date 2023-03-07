@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+  
+    
+    :root {
+        --color-blue: #1630c2;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Source Code Pro", sans-serif;
+        line-height: 1.5;
+        font-size: small;
+    }
+    
+    .menu-wrapper {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.674);
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+
+      }
+  
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+      }
+
+      nav.main-menu {
+        background-color: var(--color-blue);
+        margin: 1em 0;
+        border-radius: 4em;
+        padding: 1em;
+        width: 80%;
+      }
+
+      nav.top-inside {
+        background-color: white;
+        color: var(--color-blue);
+        font-weight: 900;
+        margin: 1em 0;
+        border-radius: 4em;
+      }
+  
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+  
+      nav li {
+        flex: 1;
+        text-align: center;
+      }
+  
+      nav li a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      nav li a i {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+  
+      nav li a span {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+  
+
+
+      .content {
+        padding: 20px;
+      }
+  
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1em;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      span.logo-dot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-blue);
+        color: white;
+        padding: 0.5em;
+        border-radius: 3em;
+        aspect-ratio: 1;
+        min-width: max-content;
+        max-width: min-content;
+      }

@@ -19,6 +19,11 @@
     <title>Awesome Layouts</title>
 
     <style>
+
+        :root {
+            --bg-gray-color: whitesmoke;
+        }
+
       * {
         margin: 0;
         padding: 0;
@@ -41,7 +46,7 @@
         margin-bottom: 1.5em;
       }
 
-      .container {
+      main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -62,7 +67,7 @@
       }
 
       .one_column_content {
-        background-color: whitesmoke;
+        background-color: var(--bg-gray-color);
 
         border-radius: 12px;
         padding: 24px;
@@ -72,7 +77,7 @@
 
       .two_columns_content {
         width: calc(100% / 2);
-        background-color: whitesmoke;
+        background-color: var(--bg-gray-color);
         box-sizing: border-box;
 
         overflow: hidden;
@@ -85,7 +90,7 @@
       }
 
       .two_columns_content:hover {
-        background-image: url('https://products.ls.graphics/mesh-gradients/images/83.-Frosted-Mint_1.jpg');
+        background-image: url("https://products.ls.graphics/mesh-gradients/images/83.-Frosted-Mint_1.jpg");
         background-size: cover;
         /* background-color: rgba(245, 222, 179, 0.274); */
       }
@@ -100,7 +105,7 @@
         max-width: min-content;
         display: flex;
         justify-content: space-around;
-        background-color: whitesmoke;
+        background-color: var(--bg-gray-color);
         border-radius: 12px;
         padding: 8px;
         font-size: large;
@@ -133,79 +138,81 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="content_blocks">
-        <div class="three_columns_content">
-          <figure class="icon"><i class="las la-cube"></i></figure>
-          <h3>All across the nation</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
-            maxime ullam minima iste. Minima, nobis!
-          </p>
+    <main>
+      <section>
+        <div class="content_blocks">
+          <div class="three_columns_content">
+            <span class="icon"><i class="las la-cube"></i></span>
+            <h3>All across the nation</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+              maxime ullam minima iste. Minima, nobis!
+            </p>
+          </div>
+
+          <div class="three_columns_content">
+            <span class="icon"><i class="las la-layer-group"></i></span>
+            <h3>Such a strange vibration</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae nostrum aliquid consequuntur illo molestiae?
+            </p>
+          </div>
+
+          <div class="three_columns_content">
+            <span class="icon"><i class="las la-cloud-sun"></i></span>
+            <h3>People in motion</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              corporis asperiores fuga, molestias qui magni?
+            </p>
+          </div>
         </div>
 
-        <div class="three_columns_content">
-          <figure class="icon"><i class="las la-layer-group"></i></figure>
-          <h3>Such a strange vibration</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-            nostrum aliquid consequuntur illo molestiae?
-          </p>
+        <div class="content_blocks">
+          <div class="two_columns_content">
+            <h2>There's a whole generation</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+              inventore assumenda aliquam, error itaque commodi fugiat veniam
+              sunt!
+            </p>
+
+            <figure class="img_fit"><img src="flower.png" /></figure>
+          </div>
+
+          <div class="two_columns_content">
+            <h2>With a new explanation</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              reprehenderit, provident asperiores architecto nemo optio quia
+              repellat nesciunt exercitationem amet?
+            </p>
+
+            <figure class="img-flow">
+              <img src="transparent-flower_cut.png" />
+            </figure>
+          </div>
         </div>
 
-        <div class="three_columns_content">
-          <figure class="icon"><i class="las la-cloud-sun"></i></figure>
-          <h3>People in motion</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            corporis asperiores fuga, molestias qui magni?
-          </p>
+        <div class="content_blocks">
+          <div class="one_column_content">
+            <h2>Be sure to wear some flowers in your hair</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+              magnam minus accusamus pariatur ullam, voluptatem optio aspernatur
+              dolor consectetur sint quam quaerat odio vero incidunt nulla,
+              vitae, reprehenderit quo! Nobis pariatur molestias neque ut minus
+              accusantium obcaecati consectetur dolores, praesentium dignissimos
+              vel ea.
+            </p>
+            <p>
+              <i class="las la-smile-wink"></i> Inspiration: Scott McKenzie —
+              San Francisco
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div class="content_blocks">
-        <div class="two_columns_content">
-          <h2>There's a whole generation</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-            inventore assumenda aliquam, error itaque commodi fugiat veniam
-            sunt!
-          </p>
-
-          <figure class="img_fit"><img src="flower.png" /></figure>
-        </div>
-
-        <div class="two_columns_content">
-          <h2>With a new explanation</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            reprehenderit, provident asperiores architecto nemo optio quia
-            repellat nesciunt exercitationem amet?
-          </p>
-
-          <figure class="img-flow">
-            <img src="transparent-flower_cut.png" />
-          </figure>
-        </div>
-      </div>
-
-      <div class="content_blocks">
-        <div class="one_column_content">
-          <h2>Be sure to wear some flowers in your hair</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
-            magnam minus accusamus pariatur ullam, voluptatem optio aspernatur
-            dolor consectetur sint quam quaerat odio vero incidunt nulla, vitae,
-            reprehenderit quo! Nobis pariatur molestias neque ut minus
-            accusantium obcaecati consectetur dolores, praesentium dignissimos
-            vel ea.
-          </p>
-          <p>
-            <i class="las la-smile-wink"></i> Inspiration: Scott McKenzie — San
-            Francisco
-          </p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
