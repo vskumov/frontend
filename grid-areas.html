@@ -16,56 +16,43 @@
 
         .container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: 220px auto 120px;
+            grid-template-rows: 100px auto 100px;
 
             grid-template-areas: 
-                        "leftside topline topline item-red-top"
-                        "leftside item-yellow item-red righside"
-                        "leftside item-red-bottom item-yellow-bottom righside"
+                        "header header header"
+                        "nav main aside"
+                        "nav footer footer"
                         ; 
             gap: 10px;
         }
 
-        .item-red-top {
-            grid-area: item-red-top; 
+        header {
+            grid-area: header; 
             background: salmon;
         }
         
-        .item-red {
-            grid-area: item-red; 
-            background: salmon;
+        aside {
+            grid-area: aside; 
+            background: lightsalmon;
         }
 
-        .item-red-bottom {
-            grid-area: item-red-bottom; 
-            background: salmon;
+        nav {
+            grid-area: nav; 
+            background: lightsalmon;
         }
 
-        .item-yellow {
-            grid-area: item-yellow;
-            background: gold;
+        main {
+            grid-area: main; 
+            background: whitesmoke;
         }
 
-        .item-yellow-bottom {
-            grid-area: item-yellow-bottom;
-            background: gold;
-        }
-
-        .leftside {
-            grid-area: leftside;
+        footer {
+            grid-area: footer; 
             background: lightseagreen;
         }
 
-        .rightside {
-            grid-area: righside;
-            background: lightseagreen;
-        }
 
-        .topline {
-            grid-area: topline;
-            background: lightseagreen;
-        }
 
     </style>
 </head>
@@ -75,14 +62,11 @@
 
         <div class="container">
 
-            <div class="leftside"></div>
-            <div class="topline"></div>
-            <div class="item-red-top"></div>
-            <div class="item-yellow"></div>
-            <div class="item-red"></div>
-            <div class="item-red-bottom"></div>
-            <div class="item-yellow-bottom"></div>
-            <div class="rightside"></div>
+            <header></header>
+            <nav></nav>
+            <aside></aside>
+            <main></main>
+            <footer></footer>
 
         </div>
 
