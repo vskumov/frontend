@@ -16,31 +16,55 @@
 
         .container {
             display: grid;
-            grid-template-columns: 2fr 10fr;
-            grid-template-rows: 100px auto 100px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
 
             grid-template-areas: 
-                        "header header"
-                        "sidebar content"
-                        "footer footer"
-                        ;
+                        "leftside topline topline item-red-top"
+                        "leftside item-yellow item-red righside"
+                        "leftside item-red-bottom item-yellow-bottom righside"
+                        ; 
             gap: 10px;
         }
-        header {
-            grid-area: header;
-            background: lightgrey;
-        }
-        aside {
-            grid-area: sidebar;
-            background: whitesmoke;
 
+        .item-red-top {
+            grid-area: item-red-top; 
+            background: salmon;
         }
-        main {
-            grid-area: content;
+        
+        .item-red {
+            grid-area: item-red; 
+            background: salmon;
         }
-        footer {
-            grid-area: footer;
-            background: lightgray;
+
+        .item-red-bottom {
+            grid-area: item-red-bottom; 
+            background: salmon;
+        }
+
+        .item-yellow {
+            grid-area: item-yellow;
+            background: gold;
+        }
+
+        .item-yellow-bottom {
+            grid-area: item-yellow-bottom;
+            background: gold;
+        }
+
+        .leftside {
+            grid-area: leftside;
+            background: lightseagreen;
+        }
+
+        .rightside {
+            grid-area: righside;
+            background: lightseagreen;
+        }
+
+        .topline {
+            grid-area: topline;
+            background: lightseagreen;
         }
 
     </style>
@@ -51,10 +75,14 @@
 
         <div class="container">
 
-            <header>header</header>
-            <aside>sidebar</aside>
-            <main>main content</main>
-            <footer>footer</footer>
+            <div class="leftside"></div>
+            <div class="topline"></div>
+            <div class="item-red-top"></div>
+            <div class="item-yellow"></div>
+            <div class="item-red"></div>
+            <div class="item-red-bottom"></div>
+            <div class="item-yellow-bottom"></div>
+            <div class="rightside"></div>
 
         </div>
 
