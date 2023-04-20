@@ -86,24 +86,28 @@ const persons = [
         position: "Position",
         salary: "Salary",
     },
+
     {
         num: "1",
         name: "Bill Gates",
         position: "Founder Microsoft",
         salary: "$1000",
     },
+
     {
         num: "2",
         name: "Steve Jobs",
         position: "Founder Apple",
         salary: "$1200",
     },
+
     {
         num: "3",
         name: "Larry Page",
         position: "Founder Google",
         salary: "$1100",
     },
+
     {
         num: "4",
         name: "Mark Zuckeberg",
@@ -169,26 +173,32 @@ const dogs = [
         breed: "golden retriever",
         age: 7,
     },
+
     {
         breed: "labrador retriever",
         age: 4,
     },
+
     {
         breed: "french bulldog",
         age: 12,
     },
+
     {
         breed: "beagle",
         age: 6,
     },
+
     {
         breed: "german shepherd dog",
         age: 2,
     },
+
     {
         breed: "poodle",
         age: 3,
     },
+    
     {
         breed: "bulldog",
         age: 4,
