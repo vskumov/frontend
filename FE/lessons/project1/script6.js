@@ -1,6 +1,3 @@
-// НЕ ДОДУМАЛСЯ, как при фильтрации по поиску сделать удаление предмета из всех списков, а не только из списка отфильтрованных предметов :-/
-
-
 // Ввод продуктов, форма 1
 const form = document.querySelector('.form');
 const elementName = document.querySelector('#name');
@@ -61,16 +58,40 @@ function createNode(title, price, index) {
     productPrice.innerHTML = `${price} <i class="las la-euro-sign"></i>`;
 
     const btn = closeButton();
+    // btn.onclick = () => {
+        
+    //     const result = [];
+    //     for (let i = 0; i < products.length; i++) {
+    //         if (i !== index) {
+    //             result.push(products[i]);
+    //         };
+    //     };
+    //     products = result;
+    //     newProduct(products);
+
+    //     if (!products.length) {
+    //         section.append(noProduct);
+    //     };
+
+    //     refreshTotalPrice()
+    // };
+
+
     btn.onclick = () => {
         
-        const result = [];
-        for (let i = 0; i < products.length; i++) {
-            if (i !== index) {
-                result.push(products[i]);
+        for (let i = 0; i < filteredProducts.length; i++) {
+            if (i === index) {
+                const id = filteredProducts[i].id;
+                removeProduct(id, filteredProducts, products);
+                
+                if(filteredProducts.length === 0) {
+                    newProduct(products);
+                } else {
+                    newProduct(filteredProducts);
+                };
             };
         };
-        products = result;
-        newProduct(products);
+
 
         if (!products.length) {
             section.append(noProduct);
@@ -182,3 +203,11 @@ function refreshTotalPrice() {
         totalSumm = 0;
     };
 }
+
+function removeProduct(id, arr1, arr2) {
+    const toDeleteFiltered = arr1.findIndex(item => item.id === id);
+    arr1.splice(toDeleteFiltered, 1);
+  
+    const toDelete = arr2.findIndex(item => item.id === id);
+    arr2.splice(toDelete, 1);
+  }
