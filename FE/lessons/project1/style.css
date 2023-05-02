@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  margin: 24px auto;
+  padding: 36px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  gap: 12px;
+}
+
+.productNav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  width: 100%;
+  max-width: 600px;
+  padding: 24px 36px;
+  margin: 12px auto;
+  background-color: whitesmoke;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  width: 100%;
+  align-self: center;
+}
+
+div.nav {
+  max-width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+button.nav {
+  display: flex;
+  justify-content: space-around;
+  min-width: fit-content;
+  max-width: min-content;
+  aspect-ratio: 1;
+
+  font-size: medium;
+  padding: 6px;
+  margin: 0px;
+  border-radius: 36px;
+  border: 1px solid lightseagreen;
+  background-color: white;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+input.nav {
+  min-width: 360px;
+  font-size: medium;
+  margin: 0px;
+  padding: 6px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid lightseagreen;
+  font-family: "Roboto";
+  position: relative;
+}
+
+input {
+  font-size: larger;
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid lightseagreen;
+  font-family: "Roboto";
+}
+
+input:focus {
+  border-color: lightcoral;
+  font-family: "Roboto";
+}
+
+input::placeholder {
+  color: lightgray;
+}
+
+button {
+  font-size: larger;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid lightseagreen;
+  background-color: lightseagreen;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+div {
+  max-width: 600px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 12px;
+}
+
+.item {
+  margin: 8px;
+  font-size: larger;
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid lightseagreen;
+  background-color: lightseagreen;
+  font-family: "Roboto";
+  color: white;
+}
+
+.productCard {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px auto;
+  padding: 36px;
+  position: relative;
+}
+
+.close {
+  height: 24px;
+  width: 24px;
+  border-radius: 48px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+section {
+  margin-top: 24px;
+}
