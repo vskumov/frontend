@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 84px;
+  min-height: 100vh;
+}
+.bluetable {
+  background-color: #102a35;
+}
+
+.units {
+  display: grid;
+  grid-template: repeat(4, 100px) / repeat(10, 1fr);
+  /* grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 1fr); */
+  gap: 6px;
+}
+
+.unit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  font-size: x-large;
+  background-color: lightgray;
+}
+
+.unit:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.unit:nth-child(2) {
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 2;
+}
+
+.unit:nth-child(3) {
+  background-color: orange;
+  grid-column: 6 / span 3;
+  grid-row: 1 / span 4;
+}
+
+.unit:nth-child(4) {
+  grid-column: 9 / span 2;
+  grid-row: 1 / 2;
+}
+
+.unit:nth-child(5) {
+  grid-column: 1 / span 2;
+  grid-row: 2 / 3;
+}
+
+.unit:nth-child(6) {
+  grid-column: 9 / span 2;
+  grid-row: 2 / 3;
+}
+
+.unit:nth-child(7) {
+  grid-column: 1 / span 2;
+  grid-row: 3 / 4;
+}
+
+.unit:nth-child(8) {
+  background-color: lightskyblue;
+}
+
+.unit:nth-child(9) {
+  grid-column: 4 / span 2;
+  grid-row: 3 / 4;
+}
+
+.unit:nth-child(10) {
+  grid-column: 9 / span 2;
+  grid-row: 3 / 4;
+}
+
+.unit:nth-child(11) {
+  grid-column: 1 / span 5;
+  grid-row: 4 / 5;
+}
+
+.unit:nth-child(12) {
+  grid-column: 9 / span 2;
+  grid-row: 4 / 5;
+}
+
+.elements {
+  display: grid;
+  grid-template: repeat(4, auto) / repeat(9, 1fr);
+  gap: 6px;
+}
+
+.element {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  font-size: small;
+  color: azure;
+  aspect-ratio: 1;
+}
+
+.yellow {
+  border: 2px solid yellow;
+  color: gray;
+}
+
+.yellow > h3 {
+  color: yellow;
+  font-size: x-large;
+}
+
+.blue {
+  border: 2px solid blue;
+  color: gray;
+}
+
+.blue > h3 {
+  color: blue;
+  font-size: x-large;
+}
+
+.element:nth-child(3) {
+  grid-column: 3 / span 4;
+  grid-row: 1 / span 1;
+  border: 0;
+  aspect-ratio: auto;
+}
+
+.items {
+  display: grid;
+  grid-template: repeat(6, 50px) / repeat(10, 1fr);
+  gap: 0px;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px;
+  font-size: x-large;
+  background-color: whitesmoke;
+  border: 1px dotted gray;
+}
+
+.item:nth-child(1) {
+    grid-column: 6 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.item:nth-child(2) {
+    grid-column: 4 / span 2;
+    grid-row: 4 / span 2;
+}
+
+.item:nth-child(3) {
+    grid-column: 9 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.item:nth-child(4) {
+    grid-column: 6 / span 2;
+    grid-row: 5 / span 2;
+}
+
+.item:nth-child(5) {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.item:nth-child(6) {
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.item:nth-child(8) {
+    grid-column: 6 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.item:nth-child(9) {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.item:nth-child(10) {
+    grid-column: 9 / span 2;
+    grid-row: 6 / span 1;
+}
+
+.item:nth-child(11) {
+    grid-column: 8 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.item:nth-child(12) {
+    grid-column: 4 / span 2;
+    grid-row: 6 / span 1;
+}
+
+.item:nth-child(13) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.item:nth-child(14) {
+    grid-column: 7 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.item:nth-child(15) {
+    grid-column: 10 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.item:nth-child(16) {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.item:nth-child(17) {
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 2;
+}
+
+.item:nth-child(18) {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.item:nth-child(20) {
+    grid-column: 8 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.item:nth-child(21) {
+    grid-column: 9 / span 2;
+    grid-row: 4 / span 2;
+}
+
+.item:nth-child(22) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.item:nth-child(23) {
+    grid-column: 8 / span 1;
+    grid-row: 5 / span 2;
+}
+
+.item:nth-child(24) {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+}
+
+.blueItem {
+background-color: lightcyan;
+}
+
+.yellowItem {
+    background-color: lightgoldenrodyellow;
+}
+
+.greenItem {
+    background-color: lightgreen;
+}
+
+.redItem {
+    background-color: lightpink;
+}

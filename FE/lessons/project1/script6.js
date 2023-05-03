@@ -86,6 +86,7 @@ function createNode(title, price, index) {
                 
                 if(filteredProducts.length === 0) {
                     newProduct(products);
+                    searchForm.reset();
                 } else {
                     newProduct(filteredProducts);
                 };
@@ -96,8 +97,8 @@ function createNode(title, price, index) {
         if (!products.length) {
             section.append(noProduct);
         };
-
-        refreshTotalPrice()
+        console.log (products);
+        refreshTotalPrice();
     };
 
 
@@ -169,6 +170,7 @@ function newProduct(productsArray) {
 };
 
 function serchAndShow() {
+    
     if (!searchImput.value) {
         filteredProducts = products;
     } else {
