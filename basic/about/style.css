@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --main-content-max-size: 740px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  padding: 36px;
+}
+
+.light-mode {
+  background-color: whitesmoke;
+  color: #2a2a2d;
+  line-height: 1.5;
+}
+
+.dark-mode {
+  background-color: #242525;
+  color: whitesmoke;
+  line-height: 1.5;
+}
+
+header {
+  max-width: var(--main-content-max-size);
+  margin: 0px auto;
+}
+
+nav {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  max-width: var(--main-content-max-size);
+  margin: 36px auto;
+}
+
+h1,
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  font-weight: 600;
+  margin: 48px 0 18px 0;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+p.lead {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  font-size: x-large;
+}
+
+.light-mode a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid lightgray;
+  padding: 2px;
+}
+
+.dark-mode a {
+  color: whitesmoke;
+  border-bottom: 1px solid gray;
+  text-decoration: none;
+  padding: 2px;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid lightsalmon;
+  padding: 2px;
+}
+
+i.media {
+  color: grey;
+  font-size: small;
+}
+
+ul {
+  padding: 0; /* Убираем поля */
+  margin-left: 0px; /* Отступ слева */
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  background: lightseagreen;
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  text-transform: lowercase;
+  padding: 5px 10px;
+  margin: 20px 0px;
+  width: 100px;
+  height: 20px;
+}
+
+mark {
+  padding: 2px 5px;
+  background: lightgoldenrodyellow;
+  border-radius: 12px;
+}
+
+img {
+  border: 5px solid lightgoldenrodyellow;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+i {
+    font-size: xx-large;
+}
