@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 24px;
+  }
+  
+  .light-mode {
+    background-color: whitesmoke;
+    color: #202020;
+  }
+  
+  .dark-mode {
+    background-color: #202020;
+    color: whitesmoke;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px;
+  }
+  
+  input,
+  button {
+    border: 1px solid salmon;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: salmon;
+    color: white;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 24px 0 0 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  li:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
