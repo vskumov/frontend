@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <form id="library-form">
+          <input type="text" id="name" placeholder="Автор" min="0" required />
+          <input
+            type="text"
+            id="book"
+            placeholder="Название книги"
+            min="0"
+            required
+          />
+          <input type="number" id="year" placeholder="Год выпуска" required />
+          <input
+            type="number"
+            id="pages"
+            placeholder="Количество страниц"
+            required
+          />
+
+          <button class="addbtn"><i class="las la-plus-circle"></i> add</button>
+        </form>
+      </nav>
+      <nav>
+        <select id="sort-books">
+          <option value="">Сортировать по...</option>
+          <option value="author-a-z">По имени автора (a-z)</option>
+          <option value="author-z-a">По имени автора (z-a)</option>
+          <option value="book-a-z">Название (a-z)</option>
+          <option value="book-z-a">Название (z-a)</option>
+          <option value="year-up">Год выпуска (по возрастанию)</option>
+          <option value="year-down">Год выпуска (по убыванию)</option>
+        </select>
+        <input type="text" id="search-books" placeholder="Поиск..." />
+
+        <button id="clean-all" class="lightbtn"><i class="las la-trash"></i> clean</button>
+        <button id="show-all" class="show-example"><i class="las la-bookmark"></i> example library</button>
+
+      </nav>
+
+      <ul id="library-list"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

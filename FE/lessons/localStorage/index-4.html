@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style-4.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <form id="product-form">
+          <input id="name" type="text" placeholder="Название товара" required />
+          <input
+            id="price"
+            type="number"
+            placeholder="Цена товара"
+            min="0"
+            required
+          />
+          <input
+            id="count"
+            type="number"
+            placeholder="Количество"
+            min="0"
+            required
+          />
+
+          <button>add</button>
+        </form>
+      </nav>
+      <nav>
+        <select id="sort">
+          <option value="">Сортировать по...</option>
+          <option value="price-up">Цена (по возрастанию)</option>
+          <option value="price-down">Цена (по убыванию)</option>
+          <option value="count-up">Количество (по возрастанию)</option>
+          <option value="count-down">Количество (по убыванию)</option>
+        </select>
+        <input type="text" id="search" placeholder="Поиск..." />
+        <!-- <button id="show-all">show all</button> -->
+        <button id="clean-all" class="lightbtn">clean</button>
+      </nav>
+
+      <ul id="product-list"></ul>
+    </div>
+
+    <script src="script-4.js"></script>
+  </body>
+</html>

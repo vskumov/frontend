@@ -91,7 +91,7 @@ function updateStudents() {
         const item = document.createElement("li");
         const itemName = document.createElement("h3");
         const itemInnhalt = document.createElement("div");
-        itemName.innerText = `${person.student}`
+        itemName.innerText = `studentsLS${person.student}`
         item.append(itemName);
         const studentMarks = document.createElement("ul");
         for (let i = 0; i < person.lesson.length; i++) {
