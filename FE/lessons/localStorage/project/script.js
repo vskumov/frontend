@@ -19,7 +19,21 @@ const books = document.querySelector("#library-list");
 const showBtn = document.querySelector("#show-all");
 const cleanBtn = document.querySelector("#clean-all");
 const searchBooks = document.querySelector("#search-books");
-const sortBooks = document.querySelector("#sort-books")
+const sortBooks = document.querySelector("#sort-books");
+
+// const url ='https://docs.google.com/spreadsheets/d/'
+// const ssid = '1_D5bqCguFegwmm6iO_hZhLtdCoOYtISQB7CS8W630SQ'
+// const query1 =`/gviz/tq?`;
+// const endpoint1 = `${url}${ssid}${query1}`
+
+
+// fetch(endpoint1)
+// .then(res => res.text())
+// .then(data => {
+//   const temp = data.substring(47).slice(0,-2);
+//   const json = JSON.parse(temp);
+//   console.log(temp)
+// });
 
 let library = [];
 
