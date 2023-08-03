@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  .nav-burger {
+    display: none;
+    img {
+      width: 36px;
+    }
+    @include medium-screen {
+      display: block;
+    }
+  }
+  .nav-menu {
+    @include medium-screen {
+      display: none;
+    }
+    ul {
+      gap: 28px;
+      @include medium-screen {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 28px;
+        background-color: $blue-bg;
+        padding: 24px;
+        gap: 6px;
+      }
+    }
+  }
+}
+
+.show {
+    display: block !important;
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    width: 600px;
+    margin: 40px auto;
+
+}
+
+.btn_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn_container button {
+    cursor: pointer;
+    transition: box-shadow 0.6s ease;
+    border: 1px solid #333;
+    background-color: whitesmoke;
+    padding: 6px;
+    font-weight: 500;
+}
+
+.button_container button:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.btn_container button:active {
+    transform: scale(0.8);
+}
+
+.text_container {
+    height: 100%;
+    width:100%;
+    border: 1px solid gray;
+    padding: 6px;
+    overflow-y: scroll;
+}
+
+.active {
+    background-color: #333 !important;
+    color: whitesmoke;
+}

@@ -1,0 +1,17 @@
+// DRY — don't repeat yourself
+
+@mixin flex ($justify-content: normal, $align-items, $gap: 0px) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+@mixin border-radius($value, $clr: green){
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    color: $clr;
+}
+// После двоеточия цвет по умолчанию, если ничего не передаётя.

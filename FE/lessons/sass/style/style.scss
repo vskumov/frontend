@@ -1,0 +1,60 @@
+// div {
+//   ul {
+//     list-style: none;
+//     li {
+//       color: salmon;
+//     }
+//   }
+//   p {
+//     text-decoration: overline;
+//     &:hover {
+//       color: grey;
+//     }
+//   }
+// }
+
+@import "./variables";
+@import "./mixins";
+
+.header {
+  @include flex(space-between, center);
+  padding: 24px;
+
+  &__menu {
+    display: flex;
+    @include flex(space-between, center, 12px);
+
+
+    &-link {
+      text-decoration: none;
+      color: $third-color;
+    }
+  }
+}
+
+.parent {
+  @media (min-width: 770px) {
+    width: 700px;
+  }
+  @media (min-width: 1000px) {
+    width: 850px;
+  }
+  @media (min-width: 1200px) {
+    width: 1000px;
+  }
+  padding: 24px;
+
+  &__p {
+    color: $primary-color;
+  }
+  &__a {
+    color: $secondary-color;
+    text-decoration: none;
+    &:hover {
+      font-size: 25px;
+    }
+  }
+  &__btn {
+    @include border-radius(12px);
+  }
+}

@@ -1,0 +1,17 @@
+.btn {
+    color: $nav-link;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    &-orange {
+        background-color: $btn-bg;
+        border-radius: 6px;
+    }
+    &-black {
+        background-color: black;
+        border-radius: 36px;
+    }
+    &.btn-tr {
+        background-color: transparent;
+    }
+}

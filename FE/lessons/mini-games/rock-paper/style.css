@@ -1,0 +1,147 @@
+@media (max-width: 575px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 100% !important;
+    padding: 0 24px;
+  }
+  #choices {
+    gap: 3rem;
+  }
+}
+
+/* sm (>=576 и <=767) */
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 100% !important;
+    padding: 0 36px;
+  }
+  #choices {
+    gap: 3rem;
+  }
+}
+
+/* md (>=768 и <=991) */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 100% !important;
+    padding: 0 72px;
+  }
+  #choices {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* lg (>=992 и <=1199) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    width: 800px !important;
+  }
+  #choices {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* xl (>=1200) */
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    width: 900px !important;
+  }
+  #choices {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin-top: 4rem;
+  text-align: right;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #999;
+  border-radius: 1rem;
+  color: #333;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  padding: 2rem 2.5rem;
+}
+
+button:hover {
+  background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#reset {
+  background-color: transparent;
+  background-color: #333;
+  color: #eee;
+  font-size: 1rem;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+}
+
+#reset:hover {
+  background-color: #111;
+}
+
+#choices {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.choice {
+  display: flex;
+  justify-content: left;
+  min-width: 6rem;
+  gap: 1rem;
+}
+
+.icon {
+  color: salmon;
+}
