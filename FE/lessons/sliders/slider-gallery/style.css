@@ -24,6 +24,8 @@ body {
 @media (min-width: 1024px) {
   .previews {
     flex-direction: column;
+    max-height: var(--base-height);
+    flex-wrap: wrap;
   }
 }
 

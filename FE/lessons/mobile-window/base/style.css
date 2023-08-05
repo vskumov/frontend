@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+
+button {
+    border: 1px solid #333;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.190);
+}
+
+#modalContent {
+    background-color: whitesmoke;
+    margin: 100px auto;
+    padding: 24px;
+    width: 50%;
+    font-family: "Manrope", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+#close {
+    float: right;
+    font-size: 28px;
+    color:#999;
+    cursor: pointer;
+}
+
+#close:hover{
+    color:#333;
+}

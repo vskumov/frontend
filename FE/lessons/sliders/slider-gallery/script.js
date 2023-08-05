@@ -1,13 +1,17 @@
 const gallery = document.querySelector("#gallery");
 const baseSize = getBaseSize();
 
+document.documentElement.style.setProperty("--base-height", `${baseSize*2}px`);
+
 
 const images = [
     "https://images.unsplash.com/photo-1633987034180-8a972ce8e077?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     "https://images.unsplash.com/photo-1627810636844-f28a4caa1645?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
     "https://images.unsplash.com/photo-1510554318937-cd0860bf68c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     "https://images.unsplash.com/photo-1689169585936-229e6c1ccca4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "https://images.unsplash.com/photo-1631023777074-8a85f27bf67d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1916&q=80"
+    "https://images.unsplash.com/photo-1631023777074-8a85f27bf67d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1916&q=80",
+    "https://images.unsplash.com/photo-1463130456064-77fda7f96d6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1619442483119-7d84bd743f69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
 ];
 
 const frame = document.createElement("div");
@@ -49,12 +53,12 @@ images.forEach((image) => {
     card.style.width = `${baseSize * 3}px`;
     card.style.height = `${baseSize * 2}px`;
     cards.append(card);
-  
+
     const preview = document.createElement("div");
     preview.classList.add("preview");
     preview.style.backgroundImage = `url("${image}")`;
     previews.append(preview);
-  });
+});
 
 
 for (let i = 0; i < images.length; i++) {
