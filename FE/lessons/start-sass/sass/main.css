@@ -604,6 +604,7 @@ header .nav-btns {
 }
 .my-apps__img img {
   width: 80%;
+  border-radius: 9px;
 }
 @media (max-width: 768px) {
   .my-apps__img img {
