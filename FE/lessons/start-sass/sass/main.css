@@ -418,9 +418,14 @@ header .nav-btns {
 }
 @media (max-width: 989px) {
   .what-is {
-    padding: 16px;
+    padding: 36px;
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .what-is {
+    padding: 16px;
   }
 }
 .what-is__text {
