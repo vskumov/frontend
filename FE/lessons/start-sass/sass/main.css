@@ -24,8 +24,9 @@ h1 {
 @media (max-width: 989px) {
   h1 {
     font-size: 48px;
-    line-height: 50px;
+    line-height: 60px;
     margin-top: 36px;
+    max-width: 88%;
   }
 }
 @media (max-width: 768px) {
@@ -33,6 +34,14 @@ h1 {
     font-size: 36px;
     line-height: 48px;
     margin-top: 24px;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 32px;
+    line-height: 45px;
+    margin-top: 24px;
+    max-width: 100%;
   }
 }
 

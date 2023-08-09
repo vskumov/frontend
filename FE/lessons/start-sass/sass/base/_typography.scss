@@ -7,13 +7,20 @@ h1 {
 
   @include medium-screen {
     font-size: 48px;
-    line-height: 50px;
+    line-height: 60px;
     margin-top: 36px;
+    max-width: 88%;
   }
   @include small-screen {
     font-size: 36px;
     line-height: 48px;
     margin-top: 24px;
+  }
+    @include x-small {
+    font-size: 32px;
+    line-height: 45px;
+    margin-top: 24px;
+    max-width: 100%;
   }
 }
 
