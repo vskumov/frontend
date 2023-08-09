@@ -1,0 +1,46 @@
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 5%;
+  border-radius: 9px;
+  background: $gradient;
+  // height: 132px;
+  margin-bottom: 72px;
+
+  &-text {
+    color: black;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 800;
+
+    @include medium-screen {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 800;
+    }
+    @include small-screen {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 800;
+    }
+  }
+  &-button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+
+    @include small-screen {
+      width: 100%;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}

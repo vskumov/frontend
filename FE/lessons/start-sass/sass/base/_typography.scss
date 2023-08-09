@@ -1,7 +1,134 @@
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 62px;
+  margin-top: 62px;
+  margin-bottom: 36px;
+
+  @include medium-screen {
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 36px;
+  }
+  @include small-screen {
+    font-size: 36px;
+    line-height: 48px;
+    margin-top: 24px;
+  }
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 44px;
+  max-width: 430px;
+  margin-bottom: 17px;
+
+  @include medium-screen {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  @include small-screen {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
+  max-width: 430px;
+  color: white;
+  margin-bottom: 36px;
+  position: relative;
+
+  @include medium-screen {
+    font-size: 18px;
+    margin-bottom: 12px !important;
+    margin-top: 36px !important;
+  }
+}
+
+h3::before {
+  content: "";
+  background: $gradient;
+  width: 36px;
+  height: 2px;
+  position: absolute;
+  top: -8px;
+  left: 0px;
+}
+
+h4 {
+  color: white;
+  position: relative;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 21px;
+  @include small-screen {
+    margin-top: 21px;
+  }
+}
+
+h4::before {
+  content: "";
+  background: $gradient;
+  width: 36px;
+  height: 2px;
+  position: absolute;
+  top: -6px;
+  left: 0px;
+}
+
+.gradient-heading {
+  background: $gradient;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
 p {
   color: $text-color;
+}
+
+.text-l {
+  font-size: 20px;
+  line-height: 30px;
+
+  @include medium-screen {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  @include small-screen {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.text-p {
   font-size: 16px;
-  line-height: 32px;
+  line-height: 24px;
+
+  @include medium-screen {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  @include small-screen {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.text-s {
+  font-size: 14px;
+  line-height: 21px;
+
+  // @include small-screen {
+  //   font-size: 14px;
+  //   line-height: 21px;
+  // }
 }
 
 a {
@@ -21,8 +148,3 @@ ul {
 ul li {
   list-style-type: none;
 }
-
-button {
-  cursor: pointer;
-}
-  

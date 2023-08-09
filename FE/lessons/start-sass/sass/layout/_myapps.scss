@@ -1,0 +1,31 @@
+.my-apps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 24px;
+
+  @include small-screen {
+    grid-template-columns: 1fr;
+  }
+
+  &__img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    @include small-screen {
+      justify-content: flex-start;
+      img {
+        align-self: flex-end;
+      }
+    }
+
+    img {
+      width: 80%;
+      @include small-screen {
+        width: 50%;
+      }
+    }
+  }
+}

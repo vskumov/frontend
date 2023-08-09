@@ -1,0 +1,21 @@
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 36px;
+
+  &-logo {
+    align-content: center;
+    text-align: center;
+  }
+
+  @include medium-screen {
+    max-width: 90%;
+
+    img {
+      height: 20px;
+    }
+  }
+}

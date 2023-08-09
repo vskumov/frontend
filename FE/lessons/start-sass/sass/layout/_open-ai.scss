@@ -1,0 +1,21 @@
+.open-ai {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  @include medium-screen {
+    grid-template-columns: 1fr;
+  }
+
+  &__texts {
+    display: grid;
+    grid-template-columns: 26% 1fr;
+    gap: 24px;
+
+    @include small-screen {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+}

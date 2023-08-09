@@ -1,0 +1,64 @@
+.what-is {
+  padding: 36px;
+  background-color: $blue-bg;
+
+  @include medium-screen {
+    padding: 16px;
+
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  &__text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "ht1 t1 t1"
+      "h2-1 h2-1 h2-1"
+      "ht2 ht3 ht4";
+    gap: 24px;
+
+    :nth-child(1) {
+      grid-area: ht1;
+    }
+
+    :nth-child(2) {
+      grid-area: t1;
+    }
+
+    :nth-child(3) {
+      grid-area: h2-1;
+    }
+
+    :nth-child(4) {
+      grid-area: ht2;
+    }
+
+    :nth-child(5) {
+      grid-area: ht3;
+    }
+
+    :nth-child(6) {
+      grid-area: ht4;
+    }
+
+    @include medium-screen {
+      grid-template-columns: 1fr;
+      grid-template-areas: "h2-1" "ht1" "t1" "ht2" "ht3" "ht4";
+      gap: 0px;
+    }
+  }
+
+  .gradient-heading {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    @include medium-screen {
+      margin-top: 0px;
+      margin-bottom: 72px;
+    }
+    @include small-screen {
+      margin-top: 0px;
+      margin-bottom: 60px;
+    }
+  }
+}

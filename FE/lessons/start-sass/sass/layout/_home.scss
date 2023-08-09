@@ -1,37 +1,18 @@
 .main-content {
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   @include medium-screen {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 24px;
   }
   &__text {
     @include medium-screen {
       order: 2;
     }
-    .gradient-heading {
-      background: $gradient;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-size: 50px;
-      font-weight: 800;
-      line-height: 62px;
-      width: 612px;
-      margin-top: 100px;
-      margin-bottom: 36px;
-      @include medium-screen {
-        font-size: 48px;
-      }
-      @include small-screen {
-        font-size: 36px;
-      }
-    }
-    .text-p {
-      font-size: 20px;
-      width: 96%;
-      margin: 24px 0;
-      width: 612px;
 
+    .text-l {
+      width: 99%;
+      margin: 24px 0;
     }
     form {
       margin-top: 36px;
@@ -43,31 +24,68 @@
         border: none;
         outline: none;
         border-radius: 6px 0 0 6px;
-        padding: 12px 24px;
+        padding: 12px 18px;
         font-size: 18px;
         width: 50%;
+        @include small-screen {
+          font-size: 14px;
+          width: 65%;
+        }
+        &:focus {
+          background-color: lightblue;
+        }
       }
       .btn {
         border-radius: 0 6px 6px 0;
+        @include small-screen {
+          font-size: 14px;
+          width: 35%;
+        }
+      }
+      @include medium-screen {
+        margin: 24px auto;
       }
     }
     .people {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 6px;
       &-text {
         p {
           font-size: 14px;
           font-weight: 400;
           line-height: 16px;
           color: $nav-link;
+          @include small-screen {
+            font-size: 12px;
+          }
+        }
+      }
+      &-img {
+        img {
+          width: 90%;
+          @include medium-screen {
+            width: 80%;
+          }
         }
       }
     }
   }
+
   &__img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
     img {
-      width: 100%;
+      width: 90%;
+      @include medium-screen {
+        width: 60%;
+      }
+      @include small-screen {
+        width: 50%;
+      }
     }
   }
 }
