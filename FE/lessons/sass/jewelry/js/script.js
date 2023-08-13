@@ -36,7 +36,6 @@ const links = document.querySelector(".main-menu__links");
 const burger = document.querySelector(".nav-burger");
 const icon = document.querySelector(".nav-burger i");
 
-
 burger.onclick = (event) => {
     event.preventDefault();
     links.classList.toggle("show");
