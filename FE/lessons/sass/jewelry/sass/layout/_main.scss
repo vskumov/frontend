@@ -39,7 +39,42 @@
   }
 }
 
-.latest,
+.latest {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @include medium-screen {
+    display: grid;
+    gap: 24px;
+  }
+  @include small-screen {
+    display: grid;
+    gap: 6px;
+  }
+
+  &__item {
+    max-width: 100%;
+
+    @include small-screen {
+      aspect-ratio: 1 / 1.5;
+    }
+
+    &-img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 16px;
+
+      @include small-screen {
+        margin-bottom: 6px;
+        aspect-ratio: 1 / 1.5;
+      }
+    }
+  }
+}
+
 .services {
   max-width: 100%;
   display: grid;
