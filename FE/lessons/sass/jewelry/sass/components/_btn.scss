@@ -9,12 +9,11 @@ button {
   text-transform: uppercase;
   opacity: 0.9;
 
-
   @include medium-screen {
     font-size: 14px;
   }
 
-  &:hover{
+  &:hover {
     opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   }
@@ -43,27 +42,3 @@ button {
     margin-top: 24px;
   }
 }
-
-//   &-black {
-//     background-color: black;
-//     border-radius: 36px;
-//   }
-//   &:hover {
-//     box-shadow: rgba(190, 230, 255, 0.3) 0px 1px 2px 0px,
-//       rgba(190, 230, 255, 0.15) 0px 2px 6px 2px;
-//   }
-//   &.btn-tr {
-//     background-color: transparent;
-//     border-radius: 6px;
-//     border: 1px solid #333;
-
-//     @include medium-screen {
-//       border: 1px solid #999;
-//     }
-
-//     // &:hover {
-//     //   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px,
-//     //     rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
-//     // }
-//   }
-// }
