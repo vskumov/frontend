@@ -1,0 +1,177 @@
+p {
+  font-family: "Lato", sans-serif;
+  color: $base-color;
+}
+
+.txt-white {
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-top: 12px;
+
+  @include medium-screen {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include small-screen {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+// headers
+
+.h2-white {
+  font-family: "Lato", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  color: white;
+
+  text-transform: uppercase;
+
+  @include medium-screen {
+    font-size: 24px;
+    line-height: 36px;
+
+    margin-bottom: 12px !important;
+    margin-top: 24px !important;
+  }
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 48px;
+
+  text-transform: uppercase;
+  color: $base-color;
+
+  margin: 60px auto 24px 0px;
+
+  @include medium-screen {
+    font-size: 24px;
+    margin-bottom: 12px !important;
+    margin-top: 24px !important;
+  }
+}
+
+//adv-header
+
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  color: $base-color;
+
+  @include medium-screen {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+// links
+
+a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.menu-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: $grafit;
+
+  @include medium-screen {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    color: $base-color;
+  }
+  @include small-screen {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    color: $base-color;
+  }
+}
+
+// additional styles
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.types__item-txt {
+  a {
+    font-size: 16px;
+    font-weight: 600;
+
+    color: $base-color;
+    text-transform: uppercase;
+
+    @include medium-screen {
+      font-size: 14px;
+    }
+  }
+}
+
+.services__item-link {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: $base-color;
+  text-transform: uppercase;
+
+  @include medium-screen {
+    font-size: 14px;
+  }
+}
+
+.reviews__item-txt {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-menu__list {
+  font-family: "Lato", sans-serif;
+
+  li {
+    a {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+      color: #000;
+    }
+    &:first-child {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 36px;
+    }
+  }
+}
+
+.underline__txt {
+  font-size: 14px;
+  color: #000;
+  @include medium-screen {
+    font-size: 14px;
+  }
+}

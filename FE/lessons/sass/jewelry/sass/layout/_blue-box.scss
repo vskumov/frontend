@@ -1,0 +1,35 @@
+.blue-box {
+  width: 100%;
+  background-color: $base-color;
+}
+
+.learn-more {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include small-screen {
+    grid-template-columns: 1fr;
+  }
+
+  &__txt {
+    padding: 72px 24px 72px 0;
+
+    @include small-screen {
+      padding: 24px 0;
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  &__img {
+    background-image: url(".././img/Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include small-screen {
+      order: 1;
+      height: 50vw;
+    }
+  }
+}
