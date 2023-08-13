@@ -1,29 +1,27 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .items {
-    margin: 48px;
-    display: grid;
-    grid-template: 100px 300px / repeat(2, 1fr);
-    /* grid-template-columns: repeat(4, auto);
+  margin: 48px;
+  display: grid;
+  grid-template: 100px 300px / repeat(2, 1fr);
+  /* grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, 1fr); */
-    column-gap: 24px;
-    row-gap: 24px;
-
+  column-gap: 24px;
+  row-gap: 24px;
 }
 
 /* bootstrap, tailwind — инструменты верстальщика, позже */
 /* repeat — повторение */
 
 .item {
-    padding: 24px;
-    border: 1px solid lightseagreen;
-    background-color: lightgray;
-    border-radius: 12px;
+  padding: 24px;
+  border: 1px solid lightseagreen;
+  background-color: lightgray;
+  border-radius: 12px;
 }
 
 /* .item:first-child {
@@ -59,18 +57,18 @@
 } */
 
 .item:last-child {
-    display: grid;
-    grid-template: repeat(2, auto) / repeat(2, 1fr);
-    gap: 12px;
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, 1fr);
+  gap: 12px;
 }
 
 .innerItem {
-    border: 1px solid salmon;
-    background-color: whitesmoke;
-    border-radius: 6px;
-    padding: 12px;
+  border: 1px solid salmon;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  padding: 12px;
 }
 
 .innerItem:first-child {
-    grid-column: 1 / span 2;
+  grid-column: 1 / span 2;
 }
