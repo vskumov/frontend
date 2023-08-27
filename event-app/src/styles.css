@@ -1,0 +1,36 @@
+form {
+    margin: 36px auto;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    border: 2px solid #999;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: rgba(158, 158, 158, 0.3) 0px 0px 0px 3px;}
+
+button {
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover{
+    opacity: 1;
+}
