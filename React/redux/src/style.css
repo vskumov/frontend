@@ -1,0 +1,39 @@
+body {
+  margin: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-size: 18px;
+  padding: 12px 24px;
+  margin: 12px 12px 12px 0;
+  background-color: #333;
+  border: 0;
+  border-radius: 6px;
+  color: whitesmoke;
+}
+
+input {
+  font-size: 18px;
+  padding: 12px;
+  margin: 12px 12px 12px 0;
+  color: #333;
+  border-radius: 6px;
+  border: 1px solid #333;
+
+  background-color: whitesmoke;
+}
+
+button:hover,
+button:active {
+  background-color: #ccc;
+  color: #333;
+}
+
+.counter {
+  font-size: 24px;
+}

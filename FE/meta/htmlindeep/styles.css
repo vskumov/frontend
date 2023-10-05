@@ -1,0 +1,218 @@
+:root {
+  --main-color: #26877f;
+  --auxiliary-color: #b53434;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 3rem auto 0 auto;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > img {
+  width: 80px;
+}
+
+/* navigation */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+/* main content */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.promo {
+  background-image: url("https://images.unsplash.com/uploads/1411901100260f56b39b9/ab70b250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+  position: relative;
+  min-height: 200px;
+}
+   
+.promo::after {
+  content: "New Season";
+  display: inline-block;
+  background-color: var(--auxiliary-color);
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  width: 100%;
+}
+
+.card p,
+.promo-txt p {
+  margin: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.card h3 {
+  margin: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.promo-txt h2 {
+  margin: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #fff;
+}
+
+.card:hover,
+.promo:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  cursor: pointer;
+}
+
+.color-bg {
+  background-color: #26877f;
+}
+
+/* footer */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  min-height: 200px;
+}
+
+.ft-copy,
+.ft-logo {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.ft-logo img {
+  width: 50px;
+}
+
+/* typography */
+
+h1,
+h2,
+h3 {
+  color: var(--main-color);
+}
+
+a {
+  color: var(--main-color);
+  transition: color 0.3s ease;
+  text-decoration: none;
+  border-bottom: 1px solid var(--auxiliary-color);
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: var(--auxiliary-color);
+}
+
+/* Responsive styles */
+@media (min-width: 481px) and (max-width: 991px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .promo {
+    grid-column: 1 / 2;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .promo {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .promo-txt {
+    max-width: 69%;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ft-copy {
+    text-align: right;
+  }
+
+  .ft-logo {
+    text-align: left;
+  }
+}

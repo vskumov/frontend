@@ -1,0 +1,77 @@
+body {
+  background-color: whitesmoke;
+}
+
+form {
+    width: 500px;
+    margin: 30px auto;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid salmon;
+  padding: 6px;
+  margin: 6px 0;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+select {
+  width: 100%;
+}
+
+button {
+  color: whitesmoke;
+  background-color: #333;
+  padding: 6px;
+  margin: 6px 0;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 0;
+}
+
+button:hover {
+  color: #333;
+  background-color: white;
+}
+
+button:disabled,
+button:disabled:hover {
+  color: whitesmoke;
+  background-color: #999;
+  cursor: auto;
+}
+
+
+
+.address {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.form_user_name {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.address_city {
+    width: 80%;
+}
+
+.address_zip {
+    max-width: 20%;
+}
+
+.zip {
+    width:100%;
+}
+
+
+.err_message {
+    color: salmon;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }

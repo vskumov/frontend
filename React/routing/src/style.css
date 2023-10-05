@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 800px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.active {
+    color: green;
+    border-bottom: 1px solid goldenrod;
+}
+
+img {
+    width:300px;
+}
+
+h1 {
+    margin-bottom: 24px;
+}
+
+.preview {
+    width:190px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+.nav-list {
+    margin-top: 24px;
+    display: flex;
+    justify-content: left;
+    gap: 12px;
+}
+.nav-item {
+    list-style-type: none;
+}
+
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+.first-element {
+    margin-top: 36px;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
